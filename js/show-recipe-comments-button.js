@@ -9,7 +9,7 @@
 
 
   $commentButton.on("click", function () {
-    if($('body').width() > 425){
+    if($('body').width() > 768){
       hideShowMenus();
     }else{
       if ($commentWindow.css("display") === "block") {

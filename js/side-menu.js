@@ -23,12 +23,32 @@ $(function () {
   var moveTitle = function () {
     $("#title").css("font-size", "3vmax");
     $(".title-container").css("margin-top", "-15%");
-
+    
       if($('body').width() <= 425){
-        $("#title").css("font-size", "5vmax");
+        $("#title").css("font-size", "4.2vmax");
         $(".title-container").css("margin-top", "-5%");
       }
-    
+      
+      if($('body').width() <= 320){
+        $("#title").css("font-size", "3.1vmax");
+        $(".title-container").css("margin-top", "-5%");
+      }
+
+      if($('body').width() > 320 && $('body').width() < 375){
+        $("#title").css("font-size", "4vmax");
+        $(".title-container").css("margin-top", "-5%");
+      }
+
+      if($('body').width() > 425 && $('body').width() < 1024){
+        $("#title").css("font-size", "6vmax");
+        $(".title-container").css("margin-top", "-3%");
+      }
+
+      if($('body').width() === 375){
+        $("#title").css("font-size", "3.1vmax");
+        $(".title-container").css("margin-top", "-5%");
+      }
+
       $(".title-container").css("justify-content", "center");
     $(".search-box").css("display", "none");
   }

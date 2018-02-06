@@ -24,6 +24,11 @@ $(function () {
             meal.visualizeMeal($mealId);
             $("#showRecipeCommentsBtn").css("display","block");
             $("#meal-window").css("margin-left","20%");
+
+            if($('body').width() <= 768){
+                $("#meal-window").css("margin-left","0px");                
+            }
+
             category.loadFromStorage($mealCategory);
         }
     });
