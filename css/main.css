@@ -39,10 +39,11 @@ body {
 }
 
 .concacts {
-cursor: pointer;
+    cursor: pointer;
 }
 
 .meals-menu {
+    z-index: 5;
     padding-top: 1%;
     padding-left: 3%;
 }
@@ -53,6 +54,7 @@ cursor: pointer;
 
 .title-search {
     margin-top: 7%;
+    z-index: 5;
     /* padding-top: 10%; */
 }
 
@@ -63,6 +65,7 @@ cursor: pointer;
     text-align: center;
     color: white;
     letter-spacing: 3px;
+
 }
 
 .title-anchor:hover {
@@ -78,6 +81,7 @@ cursor: pointer;
 
 .search-container {
     padding-top: 2%;
+
 }
 
 .search-box {
@@ -107,6 +111,15 @@ cursor: pointer;
     border-radius: 15px;
     display: block;
     border: none;
+}
+
+.ui-widget {
+    color: white;
+    font-size: 20px;
+
+    background-color: rgba(0, 0, 0, 0.6);  
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .search-box::placeholder {
@@ -147,7 +160,6 @@ footer p {
 }
 
 /* Add recipe dialog box */
-
 .dialog {
     display: none;
     background-color: rgba(0, 0, 0, 0.7);
@@ -161,6 +173,7 @@ footer p {
     border-radius: 15px;
     padding: 20px;
 }
+
 .concactInfo {
     display: none;
     background-color: rgba(0, 0, 0, 0.7);
@@ -176,12 +189,14 @@ footer p {
    
    
 }
+
 .concactInfo h2 {
     text-align: center;
     color: #fff;
     margin-bottom: 50px;
 
 }
+
 .concactInfo h3 {
     text-align: center;
     color: #fff;
@@ -206,12 +221,12 @@ footer p {
    
 }
 
-
 .persons img {
   width: 200px;
   height: 200px;
   border-radius: 5%;
 }
+
 .persons a {
     text-decoration: none;
     font-size: 20px;
@@ -221,8 +236,7 @@ footer p {
     font-size: 20px;
 }
 
-.dialog h2,
-h4 {
+.dialog h2,h4 {
     color: white;
     margin-bottom: 10px;
 }
@@ -256,7 +270,6 @@ textarea {
 }
 
 /* side nav */
-
 .sidenav {
     position: relative;
     top: 5%;
@@ -267,17 +280,16 @@ textarea {
     
     display: none;
     z-index: 1;
-
+    transition: 0.5s;
     
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background: rgba(0, 0, 0, 0.5);
     
-    /* padding-top: 30px; */
+    padding-top: 10px;
 }
 
 /* The navigation menu links */
-
 .sidenav a {
     padding: 5px;
     text-decoration: none;
@@ -287,12 +299,9 @@ textarea {
 }
 
 /* When you mouse over the navigation links, change their color */
-
 .sidenav a:hover {
     color: #f1f1f1;
 }
-
-
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 .addRecipeBtn{
@@ -325,10 +334,10 @@ textarea {
 /*====== Meal Window =====*/
 
 .meal-window {
-    position: absolute;
+    position: relative;
     top: 5%;
-    /* margin-top: 95px; */
-    margin-left: 21%;
+    /* margin-top: 5%; */
+    margin-left: 3%;
     
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -337,12 +346,11 @@ textarea {
     width: 60%;
     height: 80%;
     
+    overflow: hidden;
 }
 
 .meal-basics {
     margin-left: 5%;
-    /* margin-top: 5%; */
-    /* border: 1px solid orangered; */
 }
 
 .meal-basics span {
@@ -361,7 +369,6 @@ textarea {
 
 .ingredients {
     
-    /* border: 1px solid yellowgreen; */
     color: white;
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -377,7 +384,7 @@ textarea {
 }
 
 .pic-n-prepare {
-    /* border: 1px solid cyan; */
+    
     position: absolute;
     top: 135px;
     left: 0;
@@ -388,10 +395,9 @@ textarea {
 }
 
 .prepare {
-    /* border: 1px solid yellowgreen; */
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* font-weight: bold; */
+    
     font-size: 15px;
     margin-left: 5%;
     height: 100%;
@@ -399,7 +405,6 @@ textarea {
 }
 
 .picture {
-
     /* border: 1px solid yellowgreen; */
     /* width: 100%; */
     /* height: 100%; */
@@ -407,12 +412,14 @@ textarea {
     /* margin-top: 3%;
     margin-right: 3%; */
     /* float: right; */
+
 }
 
 .picture img{
     width: 100%;
     height: 100%;
 }
+
 /* .prepare>img {
     width: 100%;
     height: 100%;
@@ -434,11 +441,12 @@ textarea {
     width: 35px;  
       cursor: pointer;
   }
-  
-  .starsRate {
-      display: none;
-  }
-.displayStars {
+
+.starsRate {
+    display: none;
+ }
+
+ .displayStars {
     position: absolute;
     top: 32px;
     left: 100px;
@@ -465,9 +473,8 @@ textarea {
     font-size: 15px;
 }
 
-
-  /* Calories modal button */
-  .modal {
+/* Calories modal button */
+.modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -478,11 +485,8 @@ textarea {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */   
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
- 
    
 }
-
 
 /* The Close Button */
 .close {
@@ -498,9 +502,11 @@ textarea {
     text-decoration: none;
     cursor: pointer;
 }
+
 .modal-body li {
     list-style-type: none;
 }
+
 .modal-header {
     text-align: center;
     padding: 2px 16px;
@@ -510,19 +516,23 @@ textarea {
    border-top-right-radius: 10px;
    
 }
+
 .modal-header h2 {
     font-size: 20px;
     font-weight: bold;
 
 }
+
 .row {
     margin-top: 10px;
     font-size: 14px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+
 .row-last {
     margin-bottom: 20px;
 }
+
 /* Modal Body */
 .modal-body {
     padding: 2px 16px;
@@ -836,10 +846,15 @@ textarea {
       }
   }
 
-  .allContent{
+  .mainContent{
       position: absolute;
-      top: 10%;
+      height: 100%;
+      width: 100%;
+      top: 7%;
       left: 0;
+  }
+  .allContent{
+      position: relative;
       
       width: 100%;
       height: 100%;
@@ -848,7 +863,7 @@ textarea {
   .recipesShowModal {
       position: relative;
       top: 5%;
-      /* margin-top: 5%; */
+  
       margin-left: 3%;
       
       border-radius: 15px;
@@ -889,7 +904,7 @@ textarea {
         /* left: 67%; */
         left: 100%;
         
-    transition: 0.5s;
+        transition: 0.5s;
 
         border-radius: 20px;
         background-color: rgba(0, 0, 0, 0.7);
@@ -1000,15 +1015,18 @@ textarea {
     .dateAndTime {
         color: cornflowerblue;
     }
-  
-    .showComments {
-        position: absolute;
-        top: 35%;
-        left: 92%;
-  
-        display: none;
 
-        background-color: rgba(255, 255, 255, 0.0);
+  .popComments {
+      position: relative;
+      top: 5%;
+  }
+    
+    .showComments {
+        display: none;
+        margin-left: -90px;
+        margin-top: 265px; 
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px; 
         border: solid 0px black;
   
         letter-spacing: 3px;
@@ -1025,12 +1043,18 @@ textarea {
       color:#e7e7e7 ;
     }
   
+    .endOfContent{
+        display: block;
+    }
     /* commentaryBox styles - start */
 
 
     /* Custom, iPhone Retina */
     
     @media (min-width: 0px) and (max-width: 320px) {
+        body{
+            overflow: auto;
+        }
             .recipesShowModal{
                 margin-top: 2%;
                 width: 108%;
@@ -1093,23 +1117,49 @@ textarea {
 
             }
             @media (min-width: 320px) and (max-width: 425px) {
-                .recipesShowModal{
-                    margin-top: 2%;
-                    width: 108%;
+                .title-anchor {
+                    font-size: 5vmax;
                 }
+                
+                .social-buttons {
+                    width: 4vmin;
+                }
+
+                .search-box {
+                    font-size: 10px;
+            
+                    width: 60%;
+                    height: 25px;
+                    
+                    border-radius: 12px;
+                }
+
+                .search-box:focus {
+                    width: 80%;
+                    border-radius: 12px;
+                }
+
+                .ui-widget {
+                    font-size: 10px;
+                }
+                
+                .menu {
+                    margin-top: 0px;
+                }
+                
+                .menu li {
+                    margin-top: 2.5%;
+                }
+
                 .sidenav{
-                    top: -10px;
+                    top: 10%;
                     width: 110%;
                     height: 30%;
                 }
     
                 .sidenav a {
-                    margin-top:1px; 
-                    padding: 1px;
-                    text-decoration: none;
-                    font-size: 15px;
-                    color: #818181;
-                    display: block;
+                    padding: 0px;
+                    font-size: 15px; 
                 }
     
                 .addRecipeBtn{
@@ -1118,29 +1168,140 @@ textarea {
                     height: 4%;
                     width: 40%;
                 }
-    
-                .dialog {
+                
+                .recipesShowModal{
+                    margin-top: 10%;
+                    margin-left: 0; 
+                    width: 110%;
+                }
+
+                .meal-window {
+                    margin-top: 10%;
+                    margin-left: 0; 
+                    width: 110%;
+                }
+                
+                .meal-icons svg {
+                    /* Media query */
+                    margin-right: 5px;
+                    /* margin-left:3px;  */
+                }
+                
+                /* Recipe voting */
+                .rStar img{
+                    height: 35px;
+                    width: 35px;  
+                }
+                
+                .starsRate {
                     display: none;
-                    background-color: rgba(0, 0, 0, 0.7);
-                    /* margin: 0 auto; */
+                }
+                
+                 .displayStars {
+                    top: 2px;
+                    left: 100px;
+                }
+
+                #meal-name{
+                    font-size: 22px;
+                }
+                
+                #servings{
+                    font-size: 11px; 
+                }
+                
+                #time{
+                    font-size: 11px; 
+                }
+                
+                #calories{
+                    font-size: 11px; 
+                }
+                
+                #ingrids{
+                    font-size: 10px;
+                }
+
+                .pic-n-prepare {
+                    
+                    top: 155px;
+                    left: 0;
+                    
+                    /* overflow: auto; */
+                
+                    height: 100%;
+                }
+                
+                .prepare {
+                    color: white;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    
+                    font-size: 10px;
+                    margin-left: 5%;
+                    height: 38%;
+                    /* overflow: auto;     */
+                }
+
+                .ingredients {
+                    font-size: 10px;
+                    top: 75%;
+                    margin-left: 13%;
+                    width: 80%;
+                
+                    height: 90px;
+                    overflow: hidden;
+                    
+                }
+
+
+                .commentSlide {
                     position: absolute;
-                    top: 40%;
+                    top: 98%;
+                    left: 0;
+                    
+                    transition: 0.5s;
+            
+                    
+                    width: 110%;
+                    height: 85%;
+                    
+                }
+
+                .showComments {
+                    display: none;
+                    margin-left: 35%;
+                    margin-top: 2px; 
+                  
+                    font-size: 20px;
+                  
+                    transform: rotate(360deg);
+                }
+              
+                .dialog {
+                    /* display: none; */
+                 
+                    /* position: absolute; */
+                    top: 55%;
                     left: 55%;
-                    transform: translate(-50%, -50%);
+                    /* transform: translate(-50%, -50%); */
                     height: 580px;
                     width: 250px;
                     border-radius: 15px;
                     padding: 5px;
                 }
     
+                .save-close-recipe {
+                    position: relative;
+                    padding-top: 40%;
+                    left: 70%; 
+                }    
+                
                 .dialog h2,
                 h4 {
-                    color: white;
                     margin-bottom: 5px;
                 }
                 
                 .dialog h2 {
-                    text-align: center;
                     margin-bottom: 10px;
                 }
                 
@@ -1153,6 +1314,10 @@ textarea {
                     width: 228%;
                 }
     
+                .endOfContent{
+                    display: none;
+                }
+                
                 }
             /* Extra Small Devices, Phones */ 
             @media only screen and (min-width : 480px) {

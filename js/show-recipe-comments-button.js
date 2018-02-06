@@ -9,7 +9,16 @@
 
 
   $commentButton.on("click", function () {
-    hideShowMenus();
+    if($('body').width() > 425){
+      hideShowMenus();
+    }else{
+      if ($commentWindow.css("display") === "block") {
+        $commentWindow.css("display", "none");
+  
+      } else {
+        $commentWindow.css("display", "block");
+      }   
+    }
   });
 
 
@@ -24,12 +33,16 @@
     if ($commentWindow.css("display") === "block") {
       $(".commentSlide").css("left", "67%");
       $mealDetailsWindow.css("margin-left", "5%");
+
+      $commentButton.css("margin-left", "415%");
       $sideMenuWindow.css("display", "none");
 
     } else {
       $(".commentSlide").css("left", "100%");
       $mealDetailsWindow.css("margin-left", "");
       $sideMenuWindow.css("display", "block");
+
+      $commentButton.css("margin-left", "-90px");
 
     }
   };

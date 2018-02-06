@@ -22,6 +22,8 @@ $(function () {
             $('.search-box').val('');
             modifyTitle.moveTitle();
             meal.visualizeMeal($mealId);
+            $("#showRecipeCommentsBtn").css("display","block");
+            $("#meal-window").css("margin-left","20%");
             category.loadFromStorage($mealCategory);
         }
     });

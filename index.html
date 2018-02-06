@@ -93,7 +93,7 @@
 <div class="mainContent container-fluid">
     <div class="allContent row">
 
-        <div id="side-menu" class="sidenav col-sm-12">
+        <div id="side-menu" class="sidenav col-sm-4">
             <div class="menu">
                 <li>
                     <a id="showMeat">Meat</a>
@@ -158,7 +158,7 @@
         </div>
 
 
-        <div class="recipesShowModal col-sm-12">
+        <div class="recipesShowModal col-sm-7">
             <h2>Menu list of all recipes with the chosen category</h2>
             <div class="rowBackground row">
                 <div id="recipeBox" class="outerBox"></div>
@@ -167,12 +167,10 @@
     
         <!-- comments start -->
 
-
-        <button id="showRecipeCommentsBtn" class="showComments">Comments</button>
-
-        <div id="getRecipeComments" class="commentSlide">
+        
+        <div id="getRecipeComments" class="commentSlide col-xs-12">
             <div class="row">
-
+                
                 <div class="col-sm-12">
                     <div class="rowWindow">
                         <input id="user" class="nameBox center-block" name="name" placeholder="Your name: "></input>
@@ -180,33 +178,33 @@
                         <button id="post-button" class="submitPost" type="button">Post</button>
                     </div>
                 </div>
-
+                
             </div>
-
+            
             <div class="row">
-
+                
                 <div class="col-sm-12">
                     <div class="rowWindow">
-
+                        
                         <ul id="all-comments" class="newComment">
-
+                            
                         </ul>
-
+                        
                     </div>
                 </div>
-
+                
             </div>
 
         </div>
         <!-- comments end -->
-
+        
         <div class="dialog">
-
+            
             <h2>Add Your Recipe</h2>
             <div class="row">
-
+                
                 <div class="col-xs-6 col-lg-6">
-
+                    
                     <select class="category-select form-control" required="required">
                         <option id="default-category" selected="selected" disabled="disabled">Select Category</option>
                         <option value="">Meat</option>
@@ -214,13 +212,13 @@
                         <option value="">Vegan</option>
                         <option value="">Dessert</option>
                     </select>
-
-
+                    
+                    
                     <div class="recipe-name">
                         <h4>Recipe Name</h4>
                         <input placeholder="Recipe Name" type="text" class="form-control" value="" required="required" pattern="" title="">
                     </div>
-
+                    
                     <div class="ingredients-container">
                         <h4>Ingredients</h4>
                         <textarea placeholder="Enter ingredients, separated by commas" class="form-control" rows="3" required="required"></textarea>
@@ -235,44 +233,49 @@
                         <h4>Picture</h4>
                         <input type="text" id="meal-img-url" class="form-control" placeholder="URL of the meal" value="" required="required">
                     </div>
-
-                    <div class="save-close-recipe">
+                    
+                    <div class="save-close-recipe row">
                         <button id="save-recipe" class="btn btn-success" type="button">Save</button>
                         <button id="close-add-recipe" type="button" class="btn btn-danger">Close</button>
                     </div>
-
+                    
                 </div>
-
+                
                 <div class="col-xs-6 col-lg-6">
                     <img id="preview" src="" width="100%" height="auto">
                 </div>
-
+                
             </div>
         </div>
-
-        <div id="meal-window" class="meal-window col-sm-12">
+        
+        <div id="meal-window" class="meal-window col-sm-7">
             <span id="back" class="meal-icons"></span>;
-
+            
             <div class="details row">
-
-                <div class="meal-basics col-sm-12">
-                    <span>
-                        <h2 id="meal-name"></h2>
-                    </span>
-                    <span id="servings" class="meal-icons"></span>
-                    <span id="time" class="meal-icons"></span>
-                    <span id="calories" class="meal-icons"></span>
-
-                    <div id="myModal" class="modal">
-
+                
+                <div class="meal-basics">
+                   <div class="col-xs-12">
+                       <span>
+                           <h2 id="meal-name"></h2>
+                        </span>
+                    </div> 
+                   
+                    <div class="col-xs-12">
+                        <span id="servings" class="meal-icons"></span>
+                        <span id="time" class="meal-icons"></span>
+                        <span id="calories" class="meal-icons"></span>
+                    </div>
+                        
+                    <div id="myModal" class="modal col-xs-12">
+                        
                         <!-- Modal content -->
                         <div class="modal-content">
                             <div class="modal-header">
-
+                                
                                 <h2>Nutritrional facts</h2>
                             </div>
                             <div class="modal-body">
-
+                                
                                 <div class="row">
                                     <div class="col-md-8">Total Fat</div>
                                     <div id="tfat" class="col-md-4 offset-md-4"></div>
@@ -308,25 +311,25 @@
                             </div>
                         </div>
 
-
+                        
                     </div>
-
-                    </span>
-                    <div id="ratingStar" class="rStar">
+                    
+                </span>
+                    <div id="ratingStar" class="rStar col-xs-12">
                         <img id="rating" src="pictures/star.jpg" title="Rate recipe!">
                         <span id="ratingCounter"></span>
                         <div id="stars" class="displayStars"></div>
-
+                        
                     </div>
                 </div>
             </div>
-
+            
             <div class="row">
-                <div class="ingredients col-xs-9">
+                <div class="ingredients col-xs-12">
                     <span id="ingrids"></span>
                 </div>
             </div>
-
+            
             <div class="pic-n-prepare row">
                 <div class="prepare col-xs-6">
                     <p id="preparation"></p>
@@ -335,12 +338,15 @@
                     <img id="meal-pic">
                 </div>
             </div>
-
+            
+        </div>
+        <div class="popComments col-sm-1">
+                <button id="showRecipeCommentsBtn" class="showComments">Comments</button>
         </div>
     </div>
 </div>
 
-<footer>
+<footer class="endOfContent">
     <p>&#169 Dope Chefs</p>
 </footer>
 
