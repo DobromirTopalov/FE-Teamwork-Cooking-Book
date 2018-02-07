@@ -1,5 +1,4 @@
 $(function () {
-
   if($('body').width() === 375){
     $("#title").css("font-size", "3.1vmax");
     $(".title-container").css("margin-top", "-5%");

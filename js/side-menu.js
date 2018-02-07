@@ -1,5 +1,4 @@
 $(function () {
-
   $(document).mouseup(function(e) {  
   
     var container = $("#side-menu");   

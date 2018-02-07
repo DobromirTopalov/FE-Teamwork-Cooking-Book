@@ -2,7 +2,6 @@
 
 
 (function (scope) {
-
   var loadFromStorage = function (category) {
     var storage = JSON.parse(localStorage.getItem("allRecipes"));
 
