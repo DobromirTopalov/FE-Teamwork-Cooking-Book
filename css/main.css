@@ -14,7 +14,7 @@ body {
     background-repeat:no-repeat;
     background-size: cover; */
     overflow: hidden;
-    
+
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -26,6 +26,7 @@ body {
   @media screen and (max-width: 480px) {
     body {
       overflow-y: scroll;
+      background-size: 100%;
     }
   }
 
