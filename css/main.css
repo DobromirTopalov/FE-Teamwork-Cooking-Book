@@ -8,25 +8,18 @@ body {
     /* padding-top: 70px; */
 }
 body {
-    background: url("../pictures/Fotolia_119449386_L.jpg");
-    /* background-position: center center;
+    background: url("../pictures/index.jpg");
+    background-position: center center;
     background-attachment: fixed;
     background-repeat:no-repeat;
-    background-size: cover; */
+    background-size: cover;
     overflow: hidden;
 
-    background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    background-position:center;
   }
 
   @media screen and (max-width: 480px) {
     body {
       overflow-y: scroll;
-      background-size: 100%;
     }
   }
 
