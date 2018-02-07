@@ -9,11 +9,14 @@ body {
 }
 body {
     background: url("../pictures/Fotolia_119449386_L.jpg");
-    background-position: center center;
+    /* background-position: center center; */
     background-attachment: fixed;
     background-repeat:no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     overflow: hidden;
+
+    background-size:contain;
+    background-position:center;
   }
 
   @media screen and (max-width: 480px) {
