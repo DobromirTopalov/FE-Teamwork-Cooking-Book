@@ -21,8 +21,8 @@ $(function () {
   });
   
   var moveTitle = function () {
-    $("#title").css("font-size", "3vmax");
-    $(".title-container").css("margin-top", "-15%");
+    $("#title").css("font-size", "4.5vmax");
+    $(".title-container").css("margin-top", "-2%");
     
       if($('body').width() <= 425){
         $("#title").css("font-size", "4.2vmax");
@@ -47,6 +47,16 @@ $(function () {
       if($('body').width() === 375){
         $("#title").css("font-size", "3.1vmax");
         $(".title-container").css("margin-top", "-5%");
+      }
+
+      if($('body').width() > 1025){
+        $("#title").css("font-size", "5vmax");
+        $(".title-container").css("margin-top", "-12%");
+      }
+
+      if($('body').width() > 1441){
+        $("#title").css("font-size", "3vmax");
+        $(".title-container").css("margin-top", "-12%");
       }
 
       $(".title-container").css("justify-content", "center");

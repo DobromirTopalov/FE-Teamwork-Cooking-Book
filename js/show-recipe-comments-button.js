@@ -34,7 +34,7 @@
       $(".commentSlide").css("left", "67%");
       $mealDetailsWindow.css("margin-left", "5%");
 
-      $commentButton.css("margin-left", "415%");
+      $commentButton.css("margin-left", "450%");
       $sideMenuWindow.css("display", "none");
 
     } else {
@@ -42,7 +42,7 @@
       $mealDetailsWindow.css("margin-left", "");
       $sideMenuWindow.css("display", "block");
 
-      $commentButton.css("margin-left", "-90px");
+      $commentButton.css("margin-left", "-70px");
 
     }
   };
@@ -52,6 +52,7 @@
     $commentWindow.css("display", "none");
     $sideMenuWindow.css("display", "block");
 
+    $commentButton.css("margin-left", "-70px");
   };
 
   scope.menu = {

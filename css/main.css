@@ -477,7 +477,7 @@ textarea {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 6; /* Sit on top */
     margin-top: px;
     top: 0;
     left: 0;
@@ -711,22 +711,27 @@ textarea {
     fill: #D8D9D8;
   }
   
-  @media (max-width: 990px) {
+  @media (min-width: 1441px) and (max-width: 2561px) {
       .recipeTitle {
-      font-size: 25px;
+      font-size: 35px;
       }
       
       .statsButtons {
-          width: 25px;
-          height: 25px;
+          width: 30px;
+          height: 30px;
       }
       
+    .statsButtons-container a {   
+        margin-top: 0px; 
+     
+    }
       .stats{
-          font-size: 14px;
+          margin-top: 10px;
+          font-size: 25px;
       }
   }
   
-  @media (min-width: 1183px) and (max-width: 1318px) {
+  @media (min-width: 1055px) and (max-width: 1441px) {
       .recipeTitle {
           font-size: 25px;
       }
@@ -746,38 +751,38 @@ textarea {
       }
   }
   
-  @media (min-width: 998px) and (max-width: 1183px) {
+  @media (min-width: 998px) and (max-width: 1054px) {
       .recipeTitle {
           font-size: 23px;
       }
       
       .statsButtons {
-          width: 16px;
-          height: 16px;
+          width: 18px;
+          height: 18px;
       }
       
       .stats{
-          font-size: 11px;
+          font-size: 12px;
           margin-left: 1px;
       }        
       
       .statsButtons-container a{
-          margin-left: 2px; 
+          margin-left: 1px; 
       }
   }
   
   @media (min-width: 769px) and (max-width: 998px) {
       .recipeTitle {
-          font-size: 16px;
+          font-size: 23px;
       }
           
       .statsButtons {
-          width: 9px;
-          height: 9px;
+          width: 15px;
+          height: 15px;
       }
   
       .stats{
-          font-size: 7px;
+          font-size: 11px;
           margin-left: 1px;
       }
       
@@ -808,17 +813,17 @@ textarea {
   
   @media (min-width: 518px) and (max-width: 665px) {
       .recipeTitle {
-          font-size: 20px;
+          font-size: 25px;
       }
   
       .statsButtons {
-          width: 14px;
-          height: 14px;
+          width: 20px;
+          height: 20px;
       }
   
       .stats {
-          font-size: 10px;
-          margin-left: 1px;
+          font-size: 15px;
+          margin-left: 2px;
       }
   
       .statsButtons-container a {
@@ -828,17 +833,17 @@ textarea {
   
   @media (min-width: 470px) and (max-width: 518px) {
       .recipeTitle {
-          font-size: 20px;
+          font-size: 25px;
       }
   
       .statsButtons {
-          width: 12px;
-          height: 12px;
+          width: 20px;
+          height: 20px;
       }
   
       .stats {
-          font-size: 8px;
-          margin-left: 1px;
+          font-size: 15px;
+          margin-left: 2px;
       }
   
       .statsButtons-container a {
@@ -1093,7 +1098,7 @@ textarea {
     
     .showComments {
         display: none;
-        margin-left: -90px;
+        margin-left: -70px;
         margin-top: 265px; 
         background-color: rgba(0, 0, 0, 0.7);
         border-radius: 10px; 
@@ -1101,7 +1106,7 @@ textarea {
   
         letter-spacing: 3px;
         font-family: Verdana,Geneva,Tahoma,sans-serif;
-        font-size: 30px;
+        font-size: 25px;
         color: white;
         
   
@@ -1141,6 +1146,7 @@ textarea {
             }
 
             .search-box:focus {
+                color: white;
                 width: 90%;
                 border-radius: 11px;
             }
@@ -1332,6 +1338,10 @@ textarea {
                 width: 228%;
             }
 
+            #preview{
+                display: none;
+            }
+
             .concactInfo {
                 position: absolute;
                 
@@ -1401,6 +1411,7 @@ textarea {
             }
 
             .search-box:focus {
+                color: white;
                 width: 95%;
                 border-radius: 12px;
             }
@@ -1592,6 +1603,10 @@ textarea {
                 width: 228%;
             }
 
+            #preview{
+                display: none;
+            }
+
             .concactInfo {
                 position: absolute;
                 
@@ -1661,6 +1676,7 @@ textarea {
                 }
 
                 .search-box:focus {
+                    color: white;
                     width: 80%;
                     border-radius: 12px;
                 }
@@ -1847,7 +1863,11 @@ textarea {
                     margin-bottom: 5px;
                     width: 228%;
                 }
-    
+                
+                #preview{
+                    display: none;
+                }
+
                 .concactInfo {
                     position: absolute;
                     
@@ -1921,6 +1941,7 @@ textarea {
                 }
 
                 .search-box:focus {
+                    color: white;
                     width: 90%;
                     border-radius: 14px;
                 }
@@ -2113,6 +2134,10 @@ textarea {
                     width: 228%;
                 }
     
+                #preview{
+                    display: none;
+                }
+
                 .concactInfo {
                     position: absolute;
                     
@@ -2161,8 +2186,795 @@ textarea {
                 
             }
             
+            @media (min-width: 770px) and (max-width: 1025px) {
+                .title-search{
+                    margin-top: 2%; 
+                }
+
+                
+                
+                .social-buttons {
+                    width: 6vmin;
+                }
+
+                /* .search-box {
+                    font-size: 12px;
             
+                    width: 50%;
+                    height: 25px;
+                    
+                    border-radius: 14px;
+                } */
+
+                .search-box:focus {
+                    color: white;
+                    width: 90%;
+                    border-radius: 14px;
+                }
+
+                /* .ui-widget {
+                    font-size: 12px;
+                } */
+                
+                  
+                .menu li {
+                    margin-top: 2%;
+                }
+                
+                .sidenav{
+                    top: 8%;   
+                }
+                
+                
+                .sidenav a {
+                    padding: 0px;
+                    font-size: 16px; 
+                }
+    
+                .addRecipeBtn{
+                    top: 65%;
+                    
+                    height: 4%;
+                    width: 100%;
+                }
+                
+                .recipesShowModal{
+                    top: 8%;
+                }
+               
+
+                .browseTitle{
+                    /* font-family: 'Dancing Script', cursive; */
+                    /* font-size: 4vmax; */
+                    /* word-wrap: break-word; */
+                    /* text-align: center; */
+                    /* color: white; */
+                    /* letter-spacing: 3px; */
+                }
+
+                .meal-window {
+                    top: 8%;
+                }
+                
+                .meal-icons svg {
+                    margin-right: 6px;
+                
+                }
+                
+                /* .rStar img{
+                    height: 35px;
+                    width: 35px;  
+                }  
+                .starsRate {
+                    display: none;
+                }
+                
+                */
+
+                .displayStars {
+                    top: 2px;
+                    left: 100px;
+                }
+                
+                /* #meal-name{
+                    font-size: 25px;
+                } */
+                
+                /*                 
+                #servings{
+                    font-size: 11px; 
+                }
+                
+                #time{
+                    font-size: 11px; 
+                }
+                
+                #calories{
+                    font-size: 11px; 
+                }
+                
+                #ingrids{
+                    font-size: 15px;
+                } */
+
+                .pic-n-prepare {
+                    
+                    top: 155px;
+                    left: 0;
+                    
+                 
+                    height: 100%;
+                }
+                
+                .prepare {
+                    color: white;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    
+                    font-size: 14px;
+                    margin-left: 5%;
+                    height: 38%;
+                    
+                }
+
+                .ingredients {
+                    font-size: 14px;
+                    top: 75%;
+                    margin-left: 13%;
+                    width: 80%;
+                
+                    height: 90px;
+                    overflow: hidden;
+                    
+                }
+
+
+                .commentSlide {
+                    /* position: absolute; */
+                    /* top: 99%; */
+                    /* left: 0; */
+                    
+                    transition: 0.5s;
             
+                    
+                    width: 28%;
+                    height: 75%;
+                    
+                }
+
+                .showComments {
+                    font-size: 20px;
+                }
+              
+                .dialog {
+                    /* display: none; */
+                 
+                    /* position: absolute; */
+                    /* top: 55%; */
+                    /* left: 55%; */
+                    /* transform: translate(-50%, -50%); */
+                    /* height: 580px; */
+                    /* width: 250px; */
+                    /* border-radius: 15px; */
+                    /* padding: 5px; */
+                }
+    
+                .save-close-recipe {
+                    position: relative;
+                    left: 25%; 
+                }    
+                
+                .dialog h2 {
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                }
+                
+                .dialog h4 {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                
+                /* .recipe-name,
+                .ingredients-container,
+                .description-container,
+                .img-url,
+                .category-select {
+                    margin-bottom: 5px;
+                    width: 228%;
+                } */
+    
+                .concactInfo {
+                    
+                    margin-top: 30%;
+                    margin-left: 1%; 
+                    width: 50%;
+                    height: 1100px;
+                    
+                    border-radius: 15px;
+                    padding: 15px;
+                   
+                }
+                
+                .concactInfo h2 {
+                    margin-bottom: 30px;
+                
+                }
+                
+                .concactInfo h3 {
+                    margin-top: 15px;
+                
+                }
+                
+                .persons ul li {    
+                    text-align: center;
+                    margin-bottom: 15px;
+                    
+                    
+                }
+                
+                .persons img {
+                  width: 200px;
+                  height: 200px;
+                  border-radius: 5%;
+                }
+                
+                .persons a {
+                    font-size: 15px;
+                    
+                }
+
+
+                /* .endOfContent{
+                    display: none;
+                } */
+                
+            }
+            
+            @media (min-width: 1026px) and (max-width: 1441px) {
+                .title-search{
+                    /* margin-top: 2%;  */
+                }
+
+                .social-buttons {
+                    width: 6vmin;
+                }
+
+                .search-box {
+                    /* font-size: 12px; */
+                    /* width: 50%; */
+                    height: 30px;
+                    
+                    /* border-radius: 14px; */
+                }
+                
+                .search-box:focus {
+                    color: white;
+                    width: 90%;
+                    border-radius: 14px;
+                }
+
+                /* .ui-widget {
+                    font-size: 12px;
+                } */
+                
+                  
+                .menu li {
+                    margin-top: 3%;
+                }
+                
+                .sidenav{
+                    top: 7%;   
+                }
+                
+                
+                .sidenav a {
+                    padding: 3px;
+                    font-size: 20px; 
+                }
+    
+                .addRecipeBtn{
+                    top: 60%;
+                    
+                    height: 4%;
+                    width: 100%;
+                }
+                
+                .recipesShowModal{
+                    top: 7%;
+                }
+               
+
+                .browseTitle{
+                    /* font-family: 'Dancing Script', cursive; */
+                    font-size: 2.5vmax;
+                    /* word-wrap: break-word; */
+                    /* text-align: center; */
+                    /* color: white; */
+                    /* letter-spacing: 3px; */
+                }
+
+                .meal-window {
+                    top: 7%;
+                }
+                
+                .meal-icons svg {
+                    margin-right: 6px;
+                
+                }
+                
+                /* .rStar img{
+                    height: 35px;
+                    width: 35px;  
+                }  
+                .starsRate {
+                    display: none;
+                }
+                
+                */
+
+                .displayStars {
+                    top: 2px;
+                    left: 100px;
+                }
+                
+                /* #meal-name{
+                    font-size: 25px;
+                } */
+                
+                /*                 
+                #servings{
+                    font-size: 11px; 
+                }
+                
+                #time{
+                    font-size: 11px; 
+                }
+                
+                #calories{
+                    font-size: 11px; 
+                }
+                
+                #ingrids{
+                    font-size: 15px;
+                } */
+
+                .pic-n-prepare {
+                    
+                    top: 30%;
+                    left: 0;
+                    
+                 
+                    height: 100%;
+                }
+                
+                .prepare {
+                    color: white;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    
+                    font-size: 14px;
+                    margin-left: 5%;
+                    height: 38%;
+                    
+                }
+
+                .ingredients {
+                    font-size: 14px;
+                    top: 75%;
+                    margin-left: 13%;
+                    width: 80%;
+                
+                    height: 90px;
+                    overflow: hidden;
+                    
+                }
+
+
+                .commentSlide {
+                    /* position: absolute; */
+                    /* top: 99%; */
+                    /* left: 0; */
+                    
+                    transition: 0.5s;
+            
+                    
+                    width: 30%;
+                    height: 75%;
+                    
+                }
+
+                .showComments {
+                    font-size: 25px;
+                }
+              
+                .dialog {
+                    /* display: none; */
+                 
+                    /* position: absolute; */
+                    top: 48%;
+                    /* left: 55%; */
+                    /* transform: translate(-50%, -50%); */
+                    height: 580px;
+                    width: 700px;
+                    /* border-radius: 15px; */
+                    /* padding: 5px; */
+                }
+    
+                .save-close-recipe {
+                    position: relative;
+                    left: 30%; 
+                }    
+                
+                .dialog h2 {
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                }
+                
+                .dialog h4 {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+                
+                /* .recipe-name,
+                .ingredients-container,
+                .description-container,
+                .img-url,
+                .category-select {
+                    margin-bottom: 5px;
+                    width: 228%;
+                } */
+    
+                .concactInfo {
+                    
+                    margin-top: 0%;
+                    margin-left: 1%; 
+                    width: 80%;
+                    height: 550px;
+                    
+                    border-radius: 15px;
+                    padding: 10px;
+                   
+                }
+                
+                .concactInfo h2 {
+                    font-size: 28px;
+                    margin-bottom: 30px;
+                
+                }
+                
+                .concactInfo h3 {
+                    font-size: 22px;
+                    margin-top: 10px;
+                
+                }
+                
+                .persons ul li {    
+                    text-align: center;
+                    margin-bottom: 15px;
+                    
+                    
+                }
+                
+                .persons img {
+                  width: 200px;
+                  height: 200px;
+                  border-radius: 5%;
+                }
+                
+                .persons a {
+                    font-size: 14px;
+                    
+                }
+
+
+                /* .endOfContent{
+                    display: none;
+                } */
+                
+            }
+
+
+            @media (min-width: 1441px) and (max-width: 2561px) {
+                .title-search{
+                    /* margin-top: 2%;  */
+                }
+
+                .social-buttons {
+                    width: 12vmin;
+                }
+
+                .menu-button {
+                    width: 45vmin;
+                }
+
+                .search-box {
+                    font-size: 40px;
+                    width: 50%;
+                    height: 50px;
+                    
+                    /* border-radius: 14px; */
+                }
+                
+                .search-box:focus {
+                    color: white;
+                    width: 85%;
+                    border-radius: 14px;
+                }
+
+                .ui-widget {
+                    font-size: 40px;
+                }
+                
+                  
+                .menu li {
+                    margin-top: 5%;
+                }
+                
+                .sidenav{
+                    top: 5%;   
+                }
+                
+                
+                .sidenav a {
+                    padding: 3px;
+                    font-size: 35px; 
+                }
+    
+                .addRecipeBtn{
+                    top: 60%;
+                    
+                    /* height: 40%; */
+                    width: 60%;
+                }
+                
+                .recipesShowModal{
+                    top: 5%;
+                }
+               
+
+                .browseTitle{
+                    /* font-family: 'Dancing Script', cursive; */
+                    font-size: 2.5vmax;
+                    /* word-wrap: break-word; */
+                    /* text-align: center; */
+                    /* color: white; */
+                    /* letter-spacing: 3px; */
+                }
+
+                .meal-window {
+                    top: 5%;
+                }
+                
+                .meal-icons svg {
+                    margin-right: 9px;
+                    height: 40px;
+                    width: 40px;
+                }
+                
+                /* .rStar img{
+                    height: 35px;
+                    width: 35px;  
+                }  
+                .starsRate {
+                    display: none;
+                }
+                
+                */
+
+                .displayStars {
+                    top: 2px;
+                    left: 100px;
+                }
+                
+                #meal-name{
+                    font-size: 45px;
+                }
+                
+                #servings{
+                    font-size: 25px; 
+                }
+                
+                #time{
+                    font-size: 25px; 
+                }
+                
+                #calories{
+                    font-size: 25px; 
+                }
+                
+                #ingrids{
+                    font-size: 28px;
+                }
+
+                .pic-n-prepare {
+                    
+                    top: 30%;
+                    left: 0;
+                    
+                 
+                    height: 100%;
+                }
+                
+                .prepare {
+                    color: white;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    
+                    font-size: 28px;
+                    margin-left: 5%;
+                    height: 38%;
+                    
+                }
+
+                .ingredients {
+                    font-size: 28px;
+                    top: 75%;
+                    margin-left: 13%;
+                    width: 80%;
+                
+                    height: 90px;
+                    overflow: hidden;
+                    
+                }
+
+
+                .commentSlide {
+                    /* position: absolute; */
+                    /* top: 99%; */
+                    /* left: 0; */
+                    
+                    transition: 0.5s;
+            
+                    
+                    width: 30%;
+                    height: 75%;
+                    
+                }
+
+                .showComments {
+                    font-size: 35px;
+                }
+              
+                .nameBox {
+                    font-size: 25px; 
+                }
+
+                .textFormat h4{
+                    font-size: 45px;
+                }
+              
+                .commentaryBox {
+                    
+                    font-size: 25px; 
+                }
+              
+                .submitPost {
+                    font-size: 25px;
+                }
+              
+                .newComment {
+                    position: relative;
+                    list-style-type: none;
+                    font-size: 35px;      
+                    padding-left: 15%;
+                    
+                    width: 110%;
+                    height: 500px;
+              
+                    overflow: auto;
+                }
+              
+                .dateAndTime {
+                    color: cornflowerblue;
+                }
+            
+                .popComments {
+                    position: relative;
+                    top: 5%;
+                }
+                
+                .showComments {
+                    display: none;
+                    margin-left: -70px;
+                    margin-top: 265px; 
+                    background-color: rgba(0, 0, 0, 0.7);
+                    border-radius: 10px; 
+                    border: solid 0px black;
+              
+                    letter-spacing: 3px;
+                    font-family: Verdana,Geneva,Tahoma,sans-serif;
+                    font-size: 25px;
+                    color: white;
+                    
+              
+                    transform: rotate(90deg);
+                    transform-origin: left top 50 50;
+                }
+
+                .dialog {
+                    /* display: none; */
+                 
+                    /* position: absolute; */
+                    top: 48%;
+                    /* left: 55%; */
+                    /* transform: translate(-50%, -50%); */
+                    height: 980px;
+                    width: 1400px;
+                    /* border-radius: 15px; */
+                    /* padding: 5px; */
+                }
+    
+                .save-close-recipe {
+                    position: relative;
+                    left: 40%; 
+                    
+                }    
+                
+                .dialog h2 {
+                    font-size: 38px;
+                    margin-bottom: 5px;
+                }
+                
+                .dialog h4 {
+                    font-size: 36px;
+                    margin-bottom: 10px;
+                }
+                
+                /* .recipe-name,
+                .ingredients-container,
+                .description-container,
+                .img-url,
+                .category-select {
+                    margin-bottom: 5px;
+                    width: 228%;
+                } */
+    
+                .concactInfo {
+                    
+                    margin-top: 0%;
+                    margin-left: 1%; 
+                    width: 80%;
+                    height: 650px;
+                    
+                    border-radius: 15px;
+                    padding: 10px;
+                   
+                }
+                
+                .concactInfo h2 {
+                    font-size: 38px;
+                    margin-bottom: 30px;
+                
+                }
+                
+                .concactInfo h3 {
+                    font-size: 32px;
+                    margin-top: 10px;
+                
+                }
+                
+                .persons ul li {    
+                    text-align: center;
+                    margin-bottom: 15px;
+                    
+                    
+                }
+                
+                .persons img {
+                  width: 400px;
+                  height: 400px;
+                  border-radius: 5%;
+                }
+                
+                .persons a {
+                    font-size: 24px;
+                    
+                }
+
+
+                /* .endOfContent{
+                    display: none;
+                } */
+                
+            }
+
             @media only screen and (min-width : 480px) {
         
             }
