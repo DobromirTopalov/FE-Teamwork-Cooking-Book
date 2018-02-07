@@ -9,13 +9,17 @@ body {
 }
 body {
     background: url("../pictures/Fotolia_119449386_L.jpg");
-    /* background-position: center center; */
+    /* background-position: center center;
     background-attachment: fixed;
     background-repeat:no-repeat;
-    /* background-size: cover; */
+    background-size: cover; */
     overflow: hidden;
-
-    background-size:contain;
+    
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
     background-position:center;
   }
 
