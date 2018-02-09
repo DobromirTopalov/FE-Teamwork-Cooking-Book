@@ -12,19 +12,30 @@
       var $newImg = $("<img>");
       $newImg.attr("id","meal-pic");
       
-      
       $(".pic-n-prepare").html("");
       $(".pic-n-prepare").append(($newDiv).append($newP).append($newImg));
-      
     } else {
       $(".pic-n-prepare").html(safeContent);
     }
     
   }
 
+  var changeHTMLSlideEffectOnComments = function(){
+    var $mealWindow = $(".meal-window");
+
+    if ($('body').width() > 768) {
+      $mealWindow.css("width","65%");
+      
+    }
+
+  }
+
   scope.changePage = {
-    changeHTML
+    changeHTML,
+    changeHTMLSlideEffectOnComments
   };
 
   changeHTML();
+  changeHTMLSlideEffectOnComments();
+  
 })(window)

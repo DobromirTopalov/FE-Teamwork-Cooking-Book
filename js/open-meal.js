@@ -1,7 +1,8 @@
 (function (scope) {
     var visualizeMeal = function (recipeId) {
         var recipesData = JSON.parse(localStorage.getItem('allRecipes'));
-        
+        var commentsData = JSON.parse(localStorage.getItem('allComments'));
+
         if ($('.meal-window').css('display') === 'none') {
             recipesData.forEach(function (recipe) {
                 if (recipe.id === recipeId) {
@@ -27,10 +28,13 @@
                     $('#preparation').html(recipe.preparation);
                     $('#meal-pic').attr('src', recipe.picture);
                     $('.meal-window').css('display', 'block');
+                    $("#showRecipeCommentsBtn").css("display", "block");
+                    if (commentsData) {
+                        comments.displayComments();
+                    }
                 }
             });
-        }
-        
+        }       
 
         $(document).mouseup(function (e) {
             var mealDetailPanel = $('.meal-window');
@@ -77,6 +81,7 @@
         $('#preparation').html('');
         $('#ratingCounter').html('');
         $('#meal-pic').removeAttr('src');
+        comments.clearComments();
     }
 
     var $servingSVG = `<svg id="svg-serv" style="enable-background:new 0 0 24 24;" width="30px" height="30px" version="1.1" viewBox="0 0 24 24" xml:space="preserve"
@@ -115,6 +120,10 @@
 
         $("#side-menu").css("display","block");
 
+        if ($('body').width() > 770) {
+            $(".picture").css("height","35%");
+        }
+        
         visualizeMeal($id);
     });
 
@@ -125,8 +134,7 @@
 
     $('#back').on('click', function () {
         $('.meal-window').css('display', 'none');
-        $('.recipesShowModal').css('display', 'block');
-        
+        $('.recipesShowModal').css('display', 'block');      
         menu.hideShowMenusBack();
     })
 
