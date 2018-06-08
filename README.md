@@ -1,6 +1,10 @@
 # FE-Teamwork-Cooking-Book
 Front End Teamwork - SPA Cooking Book
 
+Demo:
+   * https://rawgit.com/shdwskip/FE-Teamwork-Cooking-Book/master/index.html
+Video:
+   * https://www.youtube.com/watch?v=nUWGq6gpjk4&feature=youtu.be
 
 Project Description
 -------------------   
